@@ -2,21 +2,21 @@
 
 ## Project Description
 
-This application should help controll what the user/client interactions when they visit our shopping website. This project will be developed using Git, MySQL, Sequelize, NodeJS, NPM Modules.
+This application should help controll what the user or client interactions when they visit our shopping website. This project will be developed using Git, MySQL, Sequelize, NodeJS, NPM Modules.
 
 ---
 
 ## Table of Content
 
-1. [Project Description](https://github.com/Brondchux/hw10-employee-management-system#project-description)
-2. [Author Info](https://github.com/Brondchux/hw10-employee-management-system#author-info)
-3. [User Story](https://github.com/Brondchux/hw10-employee-management-system#user-story)
-4. [Minimum Requirements](https://github.com/Brondchux/hw10-employee-management-system#minimum-requirements)
-5. [Mock-Up Preview](https://github.com/Brondchux/hw10-employee-management-system#mock-up-preview)
-6. [Useful Links](https://github.com/Brondchux/hw10-employee-management-system#useful-links)
-7. [Tech Stack](https://github.com/Brondchux/hw10-employee-management-system#tech-stack)
-8. [Credits](https://github.com/Brondchux/hw10-employee-management-system#credits)
-9. [License](https://github.com/Brondchux/hw10-employee-management-system#license)
+1. [Project Description](https://github.com/Brondchux/hw11-ecommerce-backend#project-description)
+2. [Author Info](https://github.com/Brondchux/hw11-ecommerce-backend#author-info)
+3. [User Story](https://github.com/Brondchux/hw11-ecommerce-backend#user-story)
+4. [Acceptance Criteria](https://github.com/Brondchux/hw11-ecommerce-backend#acceptance-criteria)
+5. [Mock-Up Preview](https://github.com/Brondchux/hw11-ecommerce-backend#mock-up-preview)
+6. [Useful Links](https://github.com/Brondchux/hw11-ecommerce-backend#useful-links)
+7. [Tech Stack](https://github.com/Brondchux/hw11-ecommerce-backend#tech-stack)
+8. [Credits](https://github.com/Brondchux/hw11-ecommerce-backend#credits)
+9. [License](https://github.com/Brondchux/hw11-ecommerce-backend#license)
 
 ---
 
@@ -76,9 +76,8 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 ## Useful Links
 
-1. 🗂 [Click me to view github repository for this project](https://github.com/Brondchux/hw10-employee-management-system/)
+1. 🗂 [Click me to view github repository for this project](https://github.com/Brondchux/hw11-ecommerce-backend/)
 2. 🌍 [Click me to view deployed application via heroku](https://live-hw10-employee-management.herokuapp.com/)
-3. 📺 [Click me to watch functionality video via screencastify](https://drive.google.com/file/d/12yWMt4ei-KCtK0mfkCYM8JstcutAeCpB/view)
 
 ---
 
