@@ -60,7 +60,7 @@ THEN I am able to successfully create, update, and delete data in my database
 
 ## Mock-Up Preview
 
-The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Postman:
+The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Insomnia Core:
 
 ![In Insomnia Core, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](./public/assets/images/13-orm-homework-demo-01.gif)
 
