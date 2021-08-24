@@ -1,4 +1,5 @@
 const router = require("express").Router();
+// const { where } = require("sequelize/types");
 const { Category, Product } = require("../../models");
 
 // The `/api/categories` endpoint
@@ -6,7 +7,7 @@ const { Category, Product } = require("../../models");
 router.get("/", async (req, res) => {
 	// find all categories
 	// be sure to include its associated Products
-	const categories = await Category.findAll({});
+	const categories = await Category.findAll();
 	res.json(categories);
 });
 
@@ -23,12 +24,27 @@ router.post("/", async (req, res) => {
 	res.json(addCategory);
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", async (req, res) => {
 	// update a category by its `id` value
+	await Category.update(req.body, {
+		where: {
+			id: req.params.id,
+		},
+	});
+	res.json({
+		msg: `Successfully updated the category with id of ${req.params.id}`,
+		...req.body,
+	});
 });
 
-router.delete("/:id", (req, res) => {
+router.delete("/:id", async (req, res) => {
 	// delete a category by its `id` value
+	await Category.destroy({
+		where: {
+			id: req.params.id,
+		},
+	});
+	res.json(`Successfully deleted the category with id of ${req.params.id}`);
 });
 
 module.exports = router;
