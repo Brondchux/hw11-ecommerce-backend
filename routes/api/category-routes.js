@@ -6,24 +6,29 @@ const { Category, Product } = require("../../models");
 
 router.get("/", async (req, res) => {
 	// find all categories
-	// be sure to include its associated Products
 	const categories = await Category.findAll({
+		// be sure to include its associated Products
 		include: [{ model: Product }],
 	});
-	res.json(categories);
+	res.status(200).json(categories);
 });
 
 router.get("/:id", async (req, res) => {
 	// find one category by its `id` value
-	// be sure to include its associated Products
-	const category = await Category.findByPk(req.params.id);
-	res.json(category);
+	const category = await Category.findByPk(req.params.id, {
+		// be sure to include its associated Products
+		include: [{ model: Product }],
+	});
+	res.status(200).json(category);
 });
 
 router.post("/", async (req, res) => {
 	// create a new category
 	const addCategory = await Category.create(req.body);
-	res.json(addCategory);
+	res.status(200).json({
+		msg: `Successfully created new category!`,
+		addCategory,
+	});
 });
 
 router.put("/:id", async (req, res) => {
@@ -33,7 +38,7 @@ router.put("/:id", async (req, res) => {
 			id: req.params.id,
 		},
 	});
-	res.json({
+	res.status(200).json({
 		msg: `Successfully updated the category with id of ${req.params.id}`,
 		...req.body,
 	});
@@ -46,7 +51,9 @@ router.delete("/:id", async (req, res) => {
 			id: req.params.id,
 		},
 	});
-	res.json(`Successfully deleted the category with id of ${req.params.id}`);
+	res.status(200).json({
+		msg: `Successfully deleted the category with id of ${req.params.id}`,
+	});
 });
 
 module.exports = router;
