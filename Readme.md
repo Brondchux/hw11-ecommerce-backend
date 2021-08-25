@@ -78,6 +78,7 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 1. 🗂 [Click me to view github repository for this project](https://github.com/Brondchux/hw11-ecommerce-backend/)
 2. 🌍 [Click me to view deployed application via heroku](https://live-hw10-employee-management.herokuapp.com/)
+3. 📺 [Click me to view application functionality video](https://drive.google.com/file/d/1jxfZMzc1CL2wbDqvFW79Yg0kr4RioqQY/view)
 
 ---
 
